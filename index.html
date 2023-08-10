@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css" />
+    <style type="text/css">
+        .terminal,
+        span,
+        .cmd,
+        div {
+            --color: rgba(0, 128, 0, 0.99);
+        }
+        .terminal,
+        span {
+            --size: 1.4;
+        }
+        .blog-container {
+            border: 2px solid var(--color);
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .blog-iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        $("body").terminal({
+            iam: function (name) {
+                this.echo("Hello, " + name + ". Welcome to My Personal Portfolio");
+            },
+            founder: function () {
+                this.echo("Shivam Kumar");
+            },
+            help: function () {
+                this.echo("iam - iam command and pass your name as an argument\nfounder to know the founder");
+            },
+            about: function () {
+                this.echo("👋 Hey there, I'm Shivam Kumar – AWS cloud enthusiast and a full-stack developer on a mission to turn caffeine into code! ☕🖥️\n\nI believe that clouds aren't just fluffy things in the sky – they can also host your applications and make your dreams soar! 💻⚙️\n\nWhen I'm not lost in lines of code or exploring the latest cloud features, you'll probably find me in open-source projects. 🐛📜");
+            },
+            email: function() {
+                this.echo("shivambharadwaj822@gmail.com");
+            },
+            education: function () {
+                this.echo("Btech in Computer Science and Information Technology\nKIET group of Institutions | 2022-2026");
+                this.echo("Class 11th and 12th\nSNA Evening College Barh | 2021-2022");
+                this.echo("Class 1st to 10th\nNotre Dame Academy NTPC Barh | 2011-2020");  
+            },
+            socials: function () {
+                this.echo("1. LinkedIn - https://www.linkedin.com/in/shivam-kumar-70a746256/");
+                this.echo("2. GitHub - https://github.com/Bharadwajshivam28");
+                this.echo("3. Twitter - https://twitter.com/CodeItShivam");
+                this.echo("4. Hashnode - https://hashnode.com/@Shivam2812dec");
+                this.echo("5. Discord Username - shivam2812#6162");
+                this.echo("6. Slack Username - shivambharadwaj822");
+            },
+            projects: function () {
+                this.echo("1. A Chatbot to order Pizza🍕 and Drinks 🍻. The service used by me is Amazon Lex.\nView my Project here - https://www.linkedin.com/posts/shivam-kumar-70a746256_aws-awscloud-project-activity-7086451581977604096-gzxu?utm_source=share&utm_medium=member_desktop");
+                this.echo("2. Created an End-to-End AWS Web Application to calculate Power of any number.\nI have used 5 AWS services in this:\nAWS Amplify - used to build and host Websites.\nAWS Lambda - used to make Serverless Web.\nAPI Gateway - used to build REST API.\nAmazon DynamoDB - used it for Database.\nAWS IAM - used it for setting Permissions.\n View my Project here-  https://www.linkedin.com/posts/shivam-kumar-70a746256_project-awscommunity-aws-activity-7089314955694419968-eKA7?utm_source=share&utm_medium=member_desktop");
+                this.echo("3. AWS CI/CD for Simple WebPage.\n View my Project here - https://www.linkedin.com/posts/shivam-kumar-70a746256_cicd-awscloud-awscommunity-activity-7091184436238594048-_VB8?utm_source=share&utm_medium=member_desktop")
+                this.echo("4. Dockerizing a Website and Deploying with ECR and ECS.\n Read my blog - https://webworld.hashnode.dev/create-a-docker-image-and-deploy-it-using-ecr-and-ecs")
+                this.echo("5. Converting Data into interactive Dashboard\n Read my blog here - https://webworld.hashnode.dev/unleashing-the-power-of-aws-for-data-visualization-and-analysis-by-quicksight")
+                this.echo("6. Building CollegeHub - A Platform to Connect different College Students\n GitHub Repository - https://github.com/Bharadwajshivam28/CollegeHub")
+                this.echo("7. Building SolveX - A Complete Solution to Your Problem\n GitHub Repository - https://github.com/Bharadwajshivam28/SolveX")
+                this.echo("8. I Worked on an IOT Project in which my task was to fetch data from SQL and plot different graphs using the fetched data and render it on webpage. I also worked with php in this project\n GitHub Repository - https://github.com/Bharadwajshivam28/IOT-Project")
+                this.echo("9. Image Resizer\n GitHub Repository - https://github.com/Bharadwajshivam28/Image-Resizer")
+                this.echo("10. GitHunter - A person can get information about GitHub Profile just by entering the username.\n It gives information like Name Followers, Following, Total Repository, Bio, Profile photo and Recently used 5 Repository\n Live Link - https://git-hunter.netlify.app/")
+            },
+            contact: function () {
+                this.echo("Phone Number - 9801632715")
+                this.echo("Email - shivambharadwaj822@gmail.com")
+            },
+            blogs: function () {
+                this.echo("1. Deploy a Static website with S3 in AWS\nhttps://webworld.hashnode.dev/deploy-a-static-website-with-s3-in-aws")
+                this.echo("2. Create a Docker image and deploy it using ECR and ECS\nhttps://webworld.hashnode.dev/create-a-docker-image-and-deploy-it-using-ecr-and-ecs")
+                this.echo("3. CI/CD with AWS\nhttps://webworld.hashnode.dev/cicd-with-aws")
+                this.echo("4. Building an End-to-End AWS Web Application\nhttps://webworld.hashnode.dev/building-an-end-to-end-aws-web-application")
+                this.echo("5. Unleashing the Power of AWS for Data Visualization and Analysis by QuickSight\nhttps://webworld.hashnode.dev/unleashing-the-power-of-aws-for-data-visualization-and-analysis-by-quicksight")
+                this.echo("6. Setting up and Understanding Load Balancer with suitable example\nhttps://webworld.hashnode.dev/setting-up-and-understanding-load-balancer-with-suitable-example")
+                this.echo("7. Creating an EC2 instance and connecting by it by Terminal\nhttps://webworld.hashnode.dev/creating-an-ec2-instance-and-connecting-by-it-by-terminal")
+            },
+            pwd: function () {
+                this.echo("/home/shivam")
+            },
+            help: function () {
+                    this.echo("Available commands:\n");
+                    this.echo("iam [name] - Welcome message");
+                    this.echo("founder - Know the founder");
+                    this.echo("about - About Shivam Kumar");
+                    this.echo("email - Display email address");
+                    this.echo("education - Display education details");
+                    this.echo("socials - Display social media links");
+                    this.echo("projects - Display projects");
+                    this.echo("contact - Display contact information");
+                    this.echo("blogs - Display blog links");
+                    this.echo("pwd - Display current directory");
+                },
+            },
+            {
+            greetings: "Welcome to my Portfolio (Version 1.2.3)\n For a list of aviable Commands, type help"
+            });
+    </script>
+</body>
+</html>
